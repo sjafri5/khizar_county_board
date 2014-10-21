@@ -1,0 +1,52 @@
+
+// Mobile
+
+@media (max-width: 767px)
+
+  .navbar
+    .navbar-brand
+      padding-left: 0
+
+    .navbar-text
+      display: none
+
+    ul.nav
+      float: right
+      margin: 5px -10px
+
+      li.dropdown.open ul.dropdown-menu li a
+        color: $white
+
+  .menu
+    .btn, .btn:active, .btn:hover, .btn.current
+      padding: 6px
+      margin: 0 4px 4px 0
+      border-radius: 4px
+
+      &.pull-right
+        float: none !important
+
+  .landing-page
+    h1
+      font-size: 1.8em
+
+    h2
+      font-size: 1.5em
+
+    .features-box
+      i
+        font-size: 3em
+
+  footer.footer
+    padding: 10px
+    line-height: 1.5em
+    text-align: center
+
+    .links
+      float: none !important
+
+// For responsive tables
+
+@-moz-document url-prefix()
+  fieldset
+    display: table-cell

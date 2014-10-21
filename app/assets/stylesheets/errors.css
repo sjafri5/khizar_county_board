@@ -1,0 +1,39 @@
+body {
+  background-color: #34495E;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+
+  min-width: 320px;
+  margin: 20px;
+  padding: 0;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px 10px 20px;
+  background-color: white;
+
+  border: 2px solid #1BBC9B;
+  border-top: #1BBC9B solid 5px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.logo {
+  width: 200px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: #1BBC9B;
+}

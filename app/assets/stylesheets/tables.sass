@@ -1,0 +1,33 @@
+
+table.table
+  margin-bottom: 0
+
+  tr th, tr td
+    border-color: $med-light-gray
+
+.tablesort
+  th
+    cursor: pointer
+
+  .sort-icon:before
+    font-family: 'FontAwesome'
+
+  .tablesorter-headerUnSorted .sort-icon:before
+    content: "\f0dc"
+
+  .tablesorter-headerAsc .sort-icon:before
+    content: "\f0de"
+
+  .tablesorter-headerDesc .sort-icon:before
+    content: "\f0dd"
+
+.form-row
+  display: none
+  border-top-style: hidden
+  padding-bottom: 30px
+
+  .form-control
+    margin-bottom: 15px
+
+.inline-form-row td.text
+  line-height: 34px !important

@@ -1,0 +1,42 @@
+!!! 5
+%html
+  %head
+    %title Reliefwatch
+    = stylesheet_link_tag "application", media: "all"
+    %script{ :type => "text/javascript", :src  => "https://www.google.com/jsapi" }
+    = javascript_include_tag "application"
+    = favicon_link_tag "favicon.ico"
+    %meta{ :content => "Reliefwatch is a cloud platform for health clinics in the developing world to digitize their inventory using basic mobile phones. Founded by CEO Daniel Yu at the University of Chicago.", :name => "description" }
+    %meta{ :name => "viewport", :content => "initial-scale=1.0" }
+    = csrf_meta_tags
+  %body
+    .wrap
+
+      .navbar.navbar-inverse{ "role" => "navigation" }
+        .container
+
+          %a.navbar-brand{ "href" => root_path }
+            = image_tag 'Reliefwatch-logo-white.png', alt: 'Project SAM', class: 'logo'
+
+          = menu_group :pull => :right do
+            = menu_item contact_path do
+              %i.fa.fa-user
+              Sign in
+
+      - if current_page?(root_path)
+        = yield
+      - else
+        .container
+          = yield
+
+    %footer.footer
+      .container
+
+        .links
+          = link_to 'Legal', root_url
+          &ndash;
+          = link_to 'Our team', root_url
+          &ndash;
+          = link_to 'Contact us', root_url
+
+        Copyright 2014 Project SAM, Inc.
