@@ -6,23 +6,31 @@
 
   %span.hidden-sm.hidden-md.hidden-lg
     = menu_group :pull => :right do
+
       = drop_down "Menu" do
-        / = menu_item "#features" do
-        /   Features
-        / = menu_item "#about" do
-        /   About
-        = menu_item 'mailto:contact@reliefwatch.com' do
+        = menu_item about_path do
+          About
+        = menu_item contact_path do
           Contact
-        / = menu_item "#sign-in" do
-        /   Sign in
+
+        .sign-in
+          Sign in
+
+        = menu_item 'http://www.projectsam.net' do
+          Global Brigades
+        = menu_item 'http://projectsam-staging.herokuapp.com' do
+          Heart to Heart
 
   %span.hidden-xs
     = menu_group :pull => :right do
-      / = menu_item "#features" do
-      /   Features
-      / = menu_item "#about" do
-      /   About
-      = menu_item 'mailto:contact@reliefwatch.com' do
+
+      = menu_item about_path do
+        About
+      = menu_item contact_path do
         Contact
-      / = menu_item "#sign-in" do
-      /   Sign in
+
+      = drop_down "Sign in" do
+        = menu_item 'http://www.projectsam.net' do
+          Global Brigades
+        = menu_item 'http://projectsam-staging.herokuapp.com' do
+          Heart to Heart

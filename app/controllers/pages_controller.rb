@@ -7,6 +7,10 @@ class PagesController < ApplicationController
   end
 
   def send_email
+    respond_to do |format|
+      PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:message]).deliver
+      format.js { render :layout => false }
+    end
   end
 
   def about

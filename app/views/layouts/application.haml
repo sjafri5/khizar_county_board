@@ -13,20 +13,13 @@
     .wrap
 
       = render 'layouts/navbar'
-
-      - if current_page?(root_path)
-        = yield
-      - else
-        .container
-          = yield
+      = yield
 
     %footer.footer
       .container
 
         .links
           / = link_to 'Legal', root_url
-          / &ndash;
-          / = link_to 'Our team', root_url
           / &ndash;
           = link_to 'Contact', 'mailto:contact@reliefwatch.com'
 
