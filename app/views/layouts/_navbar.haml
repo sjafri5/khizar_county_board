@@ -1,0 +1,28 @@
+
+= nav_bar inverse: true do
+
+  = link_to root_url do
+    = image_tag 'Reliefwatch-logo-white.png', alt: 'Reliefwatch', class: 'logo'
+
+  %span.hidden-sm.hidden-md.hidden-lg
+    = menu_group :pull => :right do
+      = drop_down "Menu" do
+        / = menu_item "#features" do
+        /   Features
+        / = menu_item "#about" do
+        /   About
+        = menu_item 'mailto:contact@reliefwatch.com' do
+          Contact
+        / = menu_item "#sign-in" do
+        /   Sign in
+
+  %span.hidden-xs
+    = menu_group :pull => :right do
+      / = menu_item "#features" do
+      /   Features
+      / = menu_item "#about" do
+      /   About
+      = menu_item 'mailto:contact@reliefwatch.com' do
+        Contact
+      / = menu_item "#sign-in" do
+      /   Sign in
