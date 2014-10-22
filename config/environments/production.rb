@@ -61,6 +61,22 @@ Rails.application.configure do
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
 
+  config.action_mailer.default_url_options = { :host => 'reliefwatch.com' }
+
+  # Mailer
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "mail.hover.com",
+    port: 465,
+    domain: "reliefwatch.com",
+    :user_name            => 'contact@reliefwatch.com',
+    :password             => 'uchicago2014nn',
+    :authentication       => :login,
+    :ssl                  => true,
+    :tls                  => true,
+    :enable_starttls_auto => true
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
