@@ -9,28 +9,28 @@
 
       = drop_down "Menu" do
         = menu_item about_path do
-          About
+          Learn more
         = menu_item contact_path do
-          Contact
+          Contact us
 
-        .sign-in
-          Sign in
+        / .sign-in
+        /   Sign in
 
-        = menu_item 'http://www.projectsam.net' do
-          Global Brigades
-        = menu_item 'http://projectsam-staging.herokuapp.com' do
-          Heart to Heart
+        / = menu_item 'http://www.projectsam.net' do
+        /   Global Brigades
+        / = menu_item 'http://projectsam-staging.herokuapp.com' do
+        /   Heart to Heart
 
   %span.hidden-xs
     = menu_group :pull => :right do
 
       = menu_item about_path do
-        About
+        Learn more
       = menu_item contact_path do
-        Contact
+        Contact us
 
-      = drop_down "Sign in" do
-        = menu_item 'http://www.projectsam.net' do
-          Global Brigades
-        = menu_item 'http://projectsam-staging.herokuapp.com' do
-          Heart to Heart
+      / = drop_down "Sign in" do
+      /   = menu_item 'http://www.projectsam.net' do
+      /     Global Brigades
+      /   = menu_item 'http://projectsam-staging.herokuapp.com' do
+      /     Heart to Heart

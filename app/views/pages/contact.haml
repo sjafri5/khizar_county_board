@@ -1,23 +1,28 @@
-.contact-page
-  .container.contact-confirmation.display-none
 
-    %h2 Thanks, we'll be in touch!
+.static-page
+  .contact-page
+    .container
 
-  .container.contact-content
+      %h1 Contact us to learn more
 
-    .row
-      .col-md-4.col-md-offset-4
-        = form_tag contact_path, remote: true do
-          .form-group
-            = label_tag :name, 'Your name'
-            = text_field_tag :name, nil, required: true, class: 'form-control'
-          .form-group
-            = label_tag :email, 'Email'
-            = email_field_tag :email, nil, required: true, class: 'form-control'
-          .form-group
-            = label_tag :company, 'Company'
-            = text_field_tag :company, nil, required: true, class: 'form-control'
-          .form-group
-            = label_tag :message, 'Message'
-            = text_area_tag :message, nil, class: 'form-control', rows: 3
-          = submit_tag 'Get in touch', class: 'btn btn-lg btn-primary btn-block'
+      .contact-confirmation.display-none
+
+        %h2 Thanks, we'll be in touch!
+
+      .contact-content
+        .row
+          .col-md-4.col-md-offset-4
+            = form_tag contact_path, remote: true do
+              .form-group
+                = label_tag :name, 'Your name'
+                = text_field_tag :name, nil, required: true, class: 'form-control'
+              .form-group
+                = label_tag :email, 'Email'
+                = email_field_tag :email, nil, required: true, class: 'form-control'
+              .form-group
+                = label_tag :company, 'Company'
+                = text_field_tag :company, nil, required: true, class: 'form-control'
+              .form-group
+                = label_tag :message, 'Message'
+                = text_area_tag :message, nil, class: 'form-control', rows: 3
+              = submit_tag 'Get in touch', class: 'btn btn-lg btn-primary btn-block'

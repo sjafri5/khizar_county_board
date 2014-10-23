@@ -1,17 +1,18 @@
-.about-page.container
-  .row.feature-box
-    .col-md-6.centered.ta-center
-      %h1 About Reliefwatch
 
-    .col-md-9.centered.ta-center
+.static-page
+  .about-page
+    .container
 
-      %h3
-        Reliefwatch was formed in October 2012 by Daniel Yu (CEO) to help health organizations across the developing world through technology.
+      %h1 Our mission
 
-    .team-box
-      .container
+      .row
+        .col-md-8.col-md-offset-2
 
-        .row.hidden-sm.hidden-xs
+          %h3
+            Reliefwatch was founded in 2012 by Daniel Yu (CEO) to help health organizations around the world using technology.
+
+      .row
+        .team-box.hidden-sm.hidden-xs
           .col-md-2.col-md-offset-3
             =image_tag 'daniel.png', class: 'profile-pic'
             %h3 Daniel
@@ -24,13 +25,20 @@
             =image_tag 'stelios.png', class: 'profile-pic'
             %h3 Stelios
 
-  .row.feature-box
-    .col-md-8.centered
-      %h4
-        We created Reliefwatch because innovative technology has not spread equally through all parts of the world. In an era in which data is the most powerful tool for fighting global health problems, the means for collecting this data has remained limited.
-        %br/
-        %br/
-        At the same time, basic mobile phones have transformed the lives of billions of people across the developing world, providing a platform for innovative technology to take root.
-        %br/
-        %br/
-        Our passion lies in utilizing technology in innovative ways to provide solutions through existing infrastructure.
+      .row
+        .col-md-6.col-md-offset-3
+          %p
+            We created Reliefwatch because useful technologies have not spread equally throughout the world. In an era when data analysis is a powerful tool against global health problems, the means for gathering and sharing information remain limited.
+          %p
+            At the same time, basic mobile phones have transformed the lives of billions in the developing world. Our passion lies in using technology in innovative ways to provide solutions with these new infrastructures.
+
+  .call-to-action-box.blue
+    .container
+
+      %h2
+        Ready to move beyond paper forms and spreadsheets?
+
+      .col-md-4.col-md-offset-4
+
+        = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
+          Request a demo
