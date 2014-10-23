@@ -1,14 +1,13 @@
-.landing-page
+
+.static-page
   .hero-box.blue.pattern
     .container
 
       =image_tag "mobile-device-icons.png", class: 'hero'
 
-      %h1
-        Track supplies &amp; diseases on any device.
+      %h1 Track supplies &amp; diseases anywhere, on any device.
 
-      %h4
-        Introducing Reliefwatch's simple software for health organizations in the developing world.
+      %h4 Introducing Reliefwatch's simple software for health organizations in the developing world.
 
   .partner-box.hidded-sm.hidden-xs
     .container
@@ -23,38 +22,32 @@
       = image_tag 'technori.png', class: 'partner-logo'
       = image_tag 'booth.png', class: 'partner-logo'
 
-  .video-box
-    .container.feature-box
+  .feature-box
+    .container
 
       .row
         .col-md-5.col-md-offset-1
+          %h2 Built for health organizations
 
-          %h2
-            Built for health organizations
-
-          %h4
+          %p
             Reliefwatch's platform seamlessly tracks and optimizes your distribution. Our proprietary system integrates with the devices you already own.
 
         .col-md-5
+          %h2 Simple, yet powerful
 
-          %h2
-            Simple, yet powerful
-
-          %h4
+          %p
             Real impact requires many moving parts, but our technology helps keep it simple. Reliefwatch brings the latest big data analytics to your organization.
 
       .row
         .col-md-8.col-md-offset-2
+          = image_tag 'diseases.png', class: 'img-responsive'
 
-          = image_tag 'diseases.png', class: 'featured-img img-responsive'
+  .call-to-action-box.blue
+    .container
 
-  .features-box.blue
-    .container.feature-box
-
-      %h2
-        Ready to move beyond paper, forms, and spreadsheets?
+      %h2 Ready to move beyond paper forms and spreadsheets?
 
       .col-md-4.col-md-offset-4
 
-        = link_to 'mailto:contact@reliefwatch.com', class: 'btn btn-lg btn-primary btn-block' do
+        = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
           Request a demo

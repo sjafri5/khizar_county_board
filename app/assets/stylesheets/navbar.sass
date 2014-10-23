@@ -1,19 +1,26 @@
 
 .navbar
-  padding: 6px 0
+  padding: 6px 15px
   margin: 0
 
   background-color: $blue
-  border: none
   border-radius: 0
+  border: none
+  border-bottom: 5px solid $aqua
 
   .logo
     height: 50px
+    margin-left: -15px
 
   .navbar-text
     font-weight: $normal
+    color: $white
+    float: initial
+    display: inline
+    position: relative
+    top: 2px
 
-  .navbar-text, ul.nav li a
+  ul.nav li a
     color: $white
 
   .navbar-right
@@ -27,3 +34,7 @@
 
   a, .nav .dropdown-menu
     border-radius: 5px
+
+  .sign-in
+    color: $white
+    padding: 1em
