@@ -1,5 +1,5 @@
 body {
-  background-color: #34495E;
+  background-color: #336e7b;
   font-family: 'Arial', sans-serif;
   text-align: center;
 
@@ -15,19 +15,17 @@ div {
 
   max-width: 400px;
   margin: 0 auto;
-  padding: 30px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   background-color: white;
 
-  border: 2px solid #1BBC9B;
-  border-top: #1BBC9B solid 5px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
+  border: 2px solid #1BA39C;
+  border-top: #1BA39C solid 5px;
+  border-radius: 10px;
 }
 
 .logo {
-  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -35,5 +33,5 @@ p {
 }
 
 a {
-  color: #1BBC9B;
+  color: #1BA39C;
 }
