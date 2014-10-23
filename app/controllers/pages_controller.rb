@@ -5,8 +5,8 @@ class PagesController < ApplicationController
 
   def features
   end
-  
-  def about
+
+  def mission
   end
 
   def contact

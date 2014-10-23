@@ -1,46 +1,50 @@
-.feature-page.container
-  .row.feature-box
-    .col-md-6.ta-center
-      %h1 What is Reliefwatch?
 
-    .col-md-9.ta-center
+.static-page
+  .feature-page
+    .container
 
-      %h3
-        Reliefwatch is a platform specifically designed for health organizations in the developing world to track inventory and disease cases.
-  
-  .row.feature-box
-    .col-md-8
-      %h3
-        No new hardware, installations, or downloads
+      %h1 Welcome to Reliefwatch
 
-      %h4
-        Reliefwatch requires no new hardware and relies entirely on existing infrastructure: health clinic workers can use the phones they already have, smartphone or dumbphone, wherever they happen to be. Reliefwatch uses automated voicecalls to collect information about health clinic inventory and diseases cases. From there the information can then be accessed from anywhere via the web.
+      .row
+        .col-md-8.col-md-offset-2
+          %h3
+            Our platform tracks inventory &amp; diseases for healthcare organizations in the developing world.
 
-      %h3
-        Global Reach
-      %h4
-        Reliefwatch can be used in over 180 countries and configured for 12 different languages.
+      .row
+        .col-md-8.col-md-offset-2
+          %h4
+            %i.fa.fa-check
+            No new hardware or installations
 
-      %h3
-        No IT Setup Required
-      %h4
-        Reliefwatch is designed to be as simple and intuitive as possible to use, and requires no technical expertise to get started.
+          %p
+            Reliefwatch relies on existing infrastructure: health clinic workers use the phones they already own, smartphone or not. Reliefwatch is designed to be as intuitive as possible and requires no technical expertise to get started.
 
-      %h3 Reduce Waste
-      %h4 We automatically keep track of when medications expire, making sure nothing goes to waste.
+      .row
+        .col-md-8.col-md-offset-2
+          %h4
+            %i.fa.fa-globe
+            A truly global reach
 
-      %h3 Improve Efficiency
-      %h4 Identify any source of lost inventory, simplify your operations, and eliminate supply chain bottlenecks.
+          %p
+            Our platform can track inventory & diseases in over 180 countries and has support for 12 different languages. Your data can be accessed from anywhere in the world.
+
+      .row
+        .col-md-8.col-md-offset-2
+          %h4
+            %i.fa.fa-search
+            Reduce waste &amp; improve efficiency
+
+          %p
+            We automatically track when medications expire, making sure nothing goes to waste. We help identify any source of lost inventory and eliminate bottlenecks.
 
 .static-page
   .call-to-action-box.blue
     .container
 
       %h2 Get started right away
-      %h3.white
-        Reliefwatch can be setup and ready to go for your organization within 24 hours.
+      %p Reliefwatch can be setup and ready to go in 24 hours
 
-      .col-md-4.col-md-offset-4
-
-        = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
-          Request a demo
+      .row
+        .col-md-4.col-md-offset-4
+          = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
+            Request a demo

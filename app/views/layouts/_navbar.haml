@@ -8,8 +8,10 @@
     = menu_group :pull => :right do
 
       = drop_down "Menu" do
-        = menu_item about_path do
+        = menu_item features_path do
           Learn more
+        = menu_item mission_path do
+          Our mission
         = menu_item contact_path do
           Contact us
 
@@ -24,8 +26,10 @@
   %span.hidden-xs
     = menu_group :pull => :right do
 
-      = menu_item about_path do
+      = menu_item features_path do
         Learn more
+      = menu_item mission_path do
+        Our mission
       = menu_item contact_path do
         Contact us
 
