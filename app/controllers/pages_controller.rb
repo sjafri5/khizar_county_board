@@ -14,9 +14,9 @@ class PagesController < ApplicationController
   end
 
   def send_email
-    if params[:email].present? &&
+    if params[:name].present? &&
+       params[:email].present? &&
        /.+@.+\..+/.match(params[:email]) &&
-       params[:name].present? &&
        params[:company].present?
 
       PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:message]).deliver
