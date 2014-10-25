@@ -10,12 +10,21 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @sent = params[:sent] == 'true'
   end
 
   def send_email
-    respond_to do |format|
+    if params[:email].present? &&
+       /.+@.+\..+/.match(params[:email]) &&
+       params[:name].present? &&
+       params[:company].present?
+
       PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:message]).deliver
-      format.js { render :layout => false }
+
+      redirect_to contact_path(sent: true)
+    else
+      flash.now[:alert] = "Oops, something went wrong."
+      render 'contact'
     end
   end
 

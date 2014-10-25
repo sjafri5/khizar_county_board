@@ -5,24 +5,33 @@
 
       %h1 Request a demo to learn more
 
-      .contact-confirmation.display-none
+      - if @sent == true
 
-        %h2 Thanks, we'll be in touch!
+        .contact-confirmation
+          %h2 Thanks, we'll be in touch!
 
-      .contact-content
-        .row
-          .col-md-4.col-md-offset-4
-            = form_tag contact_path, remote: true do
-              .form-group
-                = label_tag :name, 'Your name'
-                = text_field_tag :name, nil, required: true, class: 'form-control'
-              .form-group
-                = label_tag :email, 'Email'
-                = email_field_tag :email, nil, required: true, class: 'form-control'
-              .form-group
-                = label_tag :company, 'Organization'
-                = text_field_tag :company, nil, required: true, class: 'form-control'
-              .form-group
-                = label_tag :message, 'Message'
-                = text_area_tag :message, nil, class: 'form-control', rows: 3
-              = submit_tag 'Request a demo', class: 'btn btn-lg btn-primary btn-block'
+      - else
+
+        .contact-content
+          .row
+            .col-md-4.col-md-offset-4
+
+              - if flash[:alert].present?
+                .bs-callout.bs-callout-danger
+                  %h4= flash[:alert]
+                  %p Check your information and try again.
+
+              = form_tag send_email_path do
+                .form-group
+                  = label_tag :name, 'Your name'
+                  = text_field_tag :name, nil, required: true, class: 'form-control'
+                .form-group
+                  = label_tag :email, 'Email'
+                  = email_field_tag :email, nil, required: true, class: 'form-control'
+                .form-group
+                  = label_tag :company, 'Organization'
+                  = text_field_tag :company, nil, required: true, class: 'form-control'
+                .form-group
+                  = label_tag :message, 'Message'
+                  = text_area_tag :message, nil, placeholder: "Optional", class: 'form-control', rows: 3
+                = submit_tag 'Request a demo', class: 'btn btn-lg btn-primary btn-block'
