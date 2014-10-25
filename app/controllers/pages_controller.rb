@@ -23,8 +23,8 @@ class PagesController < ApplicationController
 
       redirect_to contact_path(sent: true)
     else
-      flash.now[:alert] = "Oops, something went wrong."
-      render 'contact'
+      flash[:alert] = "Oops, something went wrong."
+      redirect_to contact_path
     end
   end
 
