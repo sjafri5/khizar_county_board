@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.3'
 gem 'rails', '4.1.0'
 
 # Database
@@ -39,7 +39,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug'
 
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails', '~> 4.2.1'

@@ -1,12 +1,12 @@
 !!! 5
 %html
   %head
-    %title Reliefwatch | Tracking Supplies &amp; Diseases in the Developing World
+    %title Reliefwatch | Medical Inventory & Disease Tracking
     = stylesheet_link_tag "application", media: "all"
     %script{ :type => "text/javascript", :src  => "https://www.google.com/jsapi" }
     = javascript_include_tag "application"
     = favicon_link_tag "favicon.ico"
-    %meta{ :content => "Reliefwatch is a cloud platform for health clinics in the developing world to track essential supplies and report disease cases through basic mobile phones. Founded by CEO Daniel Yu at the University of Chicago.", :name => "description" }
+    %meta{ :content => "Reliefwatch is a cloud platform for health clinics in the developing world to track medical supplies and disease cases through basic mobile phones.", :name => "description" }
     %meta{ :name => "viewport", :content => "initial-scale=1.0" }
     = csrf_meta_tags
     = render 'layouts/analytics'
