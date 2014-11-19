@@ -9,7 +9,8 @@ RSpec.describe PagesController, :type => :controller do
       post :send_email,
         email: Faker::Internet.email,
         name: Faker::Name.name,
-        company: Faker::Company.name
+        company: Faker::Company.name,
+        request: { type: 'both' }
     end
 
     it "SHOULD redirect correctly" do
@@ -24,7 +25,8 @@ RSpec.describe PagesController, :type => :controller do
       post :send_email,
         email: nil,
         name: Faker::Name.name,
-        company: Faker::Company.name
+        company: Faker::Company.name,
+        request: { type: 'both' }
 
       expect(response).not_to redirect_to(contact_path(sent: true))
     end
@@ -33,7 +35,8 @@ RSpec.describe PagesController, :type => :controller do
       post :send_email,
         email: Faker::Internet.email,
         name: nil,
-        company: Faker::Company.name
+        company: Faker::Company.name,
+        request: { type: 'both' }
 
       expect(response).not_to redirect_to(contact_path(sent: true))
     end
@@ -42,7 +45,18 @@ RSpec.describe PagesController, :type => :controller do
       post :send_email,
         email: Faker::Internet.email,
         name: Faker::Name.name,
-        company: nil
+        company: nil,
+        request: { type: 'both' }
+
+      expect(response).not_to redirect_to(contact_path(sent: true))
+    end
+
+    it "SHOULD fail without a REQUEST TYPE" do
+      post :send_email,
+        email: Faker::Internet.email,
+        name: Faker::Name.name,
+        company: Faker::Company.name,
+        request: { type: '' }
 
       expect(response).not_to redirect_to(contact_path(sent: true))
     end

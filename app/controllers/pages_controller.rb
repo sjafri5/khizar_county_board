@@ -23,9 +23,10 @@ class PagesController < ApplicationController
     if params[:name].present? &&
        params[:email].present? &&
        /.+@.+\..+/.match(params[:email]) &&
-       params[:company].present?
+       params[:company].present? &&
+       params[:request][:type].present?
 
-      PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:message]).deliver
+      PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:request][:type], params[:message]).deliver
 
       redirect_to contact_path(sent: true)
     else
