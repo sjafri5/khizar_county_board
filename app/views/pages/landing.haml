@@ -12,16 +12,17 @@
           = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
             Request a demo
 
-  .partner-box.hidded-sm.hidden-xs
+  .partner-box.hidden-sm.hidden-xs
     .container
 
-      %h4 OUR PARTNERS
+      %h4 PARTNERS &amp; SUPPORTERS
 
       = image_tag 'global-brigades.png', class: 'partner-logo'
+      = image_tag 'heart-to-heart.png', class: 'partner-logo'
       = image_tag 'impact-engine.png', class: 'partner-logo'
+      = image_tag 'booth.png', class: 'partner-logo'
       = image_tag 'twilio.png', class: 'partner-logo'
       = image_tag 'microsoft.png', class: 'partner-logo'
-      = image_tag 'booth.png', class: 'partner-logo'
 
   .feature-box
     .container
@@ -47,10 +48,10 @@
 
           %p Our system integrates with the devices you already use. You can be setup and ready to go in 24 hours.
 
-  .partner-box.hidded-sm.hidden-xs
+  .partner-box.hidden-sm.hidden-xs
     .container
 
-      %h4 OUR COVERAGE
+      %h4 PRESS COVERAGE
 
       = link_to 'http://www.theguardian.com/sustainable-business/2015/jan/07/the-cloud-based-tool-improving-healthcare-across-the-developing-world', target: '_blank' do
         = image_tag 'the-guardian.png', class: 'partner-logo'
@@ -61,7 +62,7 @@
       = link_to 'http://www.chicagobusiness.com/article/20141023/BLOGS11/141029878/a-smart-idea-for-dumb-phones-in-ebola-fight', target: '_blank' do
         = image_tag 'crains.png', class: 'partner-logo'
       = link_to 'http://vimeo.com/108060777', target: '_blank' do
-        = image_tag 'technori.png', class: 'partner-logo'
+        = image_tag 'technori.png', class: 'partner-logo', style: 'padding-top: 0'
 
   .call-to-action-box.blue
     .container
