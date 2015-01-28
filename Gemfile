@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.1.5'
 gem 'rails', '4.1.0'
 
 # Database
@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 1.2'
 
 # Deployment
 gem 'figaro'
+
+# Use unicorn as the app server
+gem 'unicorn'
+gem 'unicorn-rails'
 
 group :doc do
   gem 'sdoc', require: false
@@ -68,8 +72,4 @@ end
 
 group :production do
   gem 'rails_12factor'
-
-  # Use unicorn as the app server
-  gem 'unicorn'
-  gem 'unicorn-rails'
 end
