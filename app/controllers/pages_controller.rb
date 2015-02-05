@@ -1,20 +1,5 @@
 class PagesController < ApplicationController
 
-  def landing
-  end
-
-  def features
-  end
-
-  def mission
-  end
-
-  def careers
-  end
-
-  def business_development
-  end
-
   def contact
     @sent = params[:sent] == 'true'
   end

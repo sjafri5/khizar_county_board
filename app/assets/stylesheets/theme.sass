@@ -1,0 +1,490 @@
+
+body
+  min-width: 320px
+  font-family: $body-font
+  font-weight: $normal
+  color: $med-gray
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1, h2, h3, h4, h5, h6
+  font-family: $header-font
+  font-weight: $bold
+  color: $light-aqua
+
+a
+  color: $light-aqua
+  -webkit-transition: color 0.4s
+  -moz-transition: color 0.4s
+  -ms-transition: color 0.4s
+  -o-transition: color 0.4s
+
+a:hover
+  text-decoration: underline
+
+.btn, a.btn
+  -webkit-transition: background-color 0.4s
+  -moz-transition: background-color 0.4s
+  -ms-transition: background-color 0.4s
+  -o-transition: background-color 0.4s
+  font-family: $header-font
+  font-weight: $bold
+  padding: 8px 16px
+
+.btn .fa, a.btn .fa
+  margin-right: 5px
+
+.btn:focus, a.btn:focus
+  color: $true-white
+
+a.btn-cta-primary, .btn-cta-primary
+  background: $orange
+  border: none
+  color: $white
+  text-transform: uppercase
+
+a.btn-cta-primary:hover, .btn-cta-primary:hover
+  background: $dark-orange
+  color: $white
+
+a.btn-cta-secondary, .btn-cta-secondary
+  background: $blue
+  border: none
+  color: $white
+  text-transform: uppercase
+
+a.btn-cta-secondary:hover, .btn-cta-secondary:hover
+  background: $dark-blue
+  color: $white
+
+.text-highlight
+  color: $blue
+
+.offset-header
+  padding-top: 90px
+
+/* ======= Header ======= */
+
+.header
+  padding: 10px 0
+  background: none
+  position: fixed
+  width: 100%
+
+  -webkit-transition: background-color 0.4s
+  -moz-transition: background-color 0.4s
+  -o-transition: background-color 0.4s
+  transition: background-color 0.4s
+
+  &.navbar-fixed-top
+    background: $true-white
+    z-index: 9999
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
+
+  .logo
+    margin: 0
+
+    img
+      height: 50px
+
+  .main-nav
+
+    button
+      background: $blue
+      color: $true-white !important
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      -ms-border-radius: 4px
+      -o-border-radius: 4px
+      border-radius: 4px
+      -moz-background-clip: padding
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+
+      &:focus
+        outline: none
+
+      .icon-bar
+        background-color: $true-white
+
+    .navbar-collapse
+      padding: 0
+      padding-left: 22px !important
+
+    .nav .nav-item
+      margin-right: 20px
+      font-family: $header-font
+      font-weight: $bold
+
+      a
+        color: $blue
+        font-size: 14px
+        padding: 15px 10px
+
+        &:hover
+          color: $dark-blue
+          background: none
+
+        &:focus
+          outline: none
+          background: none
+
+        &:active
+          outline: none
+          background: none
+
+      &.active a
+        color: $orange
+        background: none
+
+      &.last
+        margin-right: 0
+
+/* ======= Home ======= */
+
+.home
+  background: url("bg-woman.png")
+  background-size: cover
+  color: $true-white
+  padding-top: 150px
+
+  .title
+    font-size: 98px
+    color: $dark-blue
+    margin-top: 0
+
+  .intro
+    padding: 40px 0 30px 0
+    font-size: 32px
+    max-width: 680px
+    margin: 0 auto
+    margin-bottom: 30px
+
+  .btns .btn
+    margin-right: 15px
+    font-size: 18px
+    padding: 8px 30px
+
+  .meta
+    margin-top: 50px
+    margin-bottom: 30px
+
+    a
+      color: $blue
+      font-size: 1.5em
+
+      &:hover
+        color: $dark-blue
+
+  .partners
+    background: $blue
+    padding: 10px 0
+    margin: 0 auto
+
+    li
+      margin-top: 15px
+
+/* ======= Features & Press ======= */
+
+.features, .press
+  padding: 80px 0
+  background: $white
+
+  .title
+    color: $blue
+    margin-top: 0
+    margin-bottom: 60px
+
+  .intro
+    max-width: 800px
+    margin: 0 auto
+    margin-bottom: 60px
+
+  .item
+    position: relative
+    margin-bottom: 30px
+
+    .icon-holder
+      position: absolute
+      left: 30px
+      top: 0
+
+      .fa
+        font-size: 24px
+        color: $blue
+
+    .content
+      padding-left: 60px
+
+      .sub-title
+        margin-top: 0
+        color: $blue
+        font-size: 18px
+
+/* ======= Regions ======= */
+
+.regions
+  padding: 80px 0
+  background: $light-aqua
+  color: $true-white
+
+  .title
+    color: $blue
+    margin-top: 0
+    margin-bottom: 30px
+
+  a
+    color: $blue
+
+    &:hover
+      color: $dark-blue
+
+  .feature-list li
+    margin-bottom: 10px
+    color: $blue
+
+  .feature-list li .fa
+    margin-right: 5px
+    color: $true-white
+
+/* ======= About ======= */
+
+.about
+  padding: 80px 0 40px 0
+  background: $white
+
+  .title
+    margin-top: 0
+    margin-bottom: 60px
+    color: $blue
+
+  .about-inner
+    max-width: 800px
+    background: $true-white
+    padding: 30px
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    -ms-border-radius: 4px
+    -o-border-radius: 4px
+    border-radius: 4px
+    -moz-background-clip: padding
+    -webkit-background-clip: padding-box
+    background-clip: padding-box
+    margin: 0 auto
+
+    .title
+      margin: 20px 0 40px 0
+
+  .info
+    max-width: 760px
+    margin: 0 auto
+
+  .cta-container
+    max-width: 540px
+    margin: 0 auto
+    margin-top: 60px
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    -ms-border-radius: 4px
+    -o-border-radius: 4px
+    border-radius: 4px
+    -moz-background-clip: padding
+    -webkit-background-clip: padding-box
+    background-clip: padding-box
+
+    .speech-bubble
+      background: $light-blue
+      color: $blue
+      padding: 30px
+      margin-bottom: 30px
+      position: relative
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      -ms-border-radius: 4px
+      -o-border-radius: 4px
+      border-radius: 4px
+      -moz-background-clip: padding
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+
+      &:after
+        position: absolute
+        left: 50%
+        bottom: -10px
+        margin-left: -10px
+        content: ""
+        display: inline-block
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 10px solid $light-blue
+
+    .icon-holder
+      margin-bottom: 15px
+
+    .icon-holder .fa
+      font-size: 56px
+
+    .intro
+      margin-bottom: 30px
+
+/* ======= Contact ======= */
+
+.contact
+  padding: 80px 0
+  background: $light-aqua
+  color: $true-white
+
+  .contact-inner
+    max-width: 760px
+    margin: 0 auto
+
+  .title
+    color: $blue
+    margin-top: 0
+    margin-bottom: 30px
+
+  .intro
+    margin-bottom: 60px
+
+  a
+    color: $blue
+
+    &:hover
+      color: $dark-blue
+
+  .author-message
+    position: relative
+    margin-bottom: 60px
+
+    .profile
+      position: absolute
+      left: 30px
+      top: 15px
+      width: 100px
+      height: 100px
+
+      img
+        width: 100px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        -ms-border-radius: 50%
+        -o-border-radius: 50%
+        border-radius: 50%
+        -moz-background-clip: padding
+        -webkit-background-clip: padding-box
+        background-clip: padding-box
+
+    .speech-bubble
+      margin-left: 155px
+      background: $light-blue
+      color: $blue
+      padding: 30px
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      -ms-border-radius: 4px
+      -o-border-radius: 4px
+      border-radius: 4px
+      -moz-background-clip: padding
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+      position: relative
+
+      .sub-title
+        color: $blue
+        font-size: 16px
+        margin-top: 0
+        margin-bottom: 30px
+
+        a
+          color: $true-white
+
+        &:after
+          position: absolute
+          left: -10px
+          top: 60px
+          content: ""
+          display: inline-block
+          width: 0
+          height: 0
+          border-top: 10px solid transparent
+          border-bottom: 10px solid transparent
+          border-right: 10px solid $light-blue
+
+      .source
+        margin-top: 30px
+
+        a
+          color: $blue
+
+        .name
+          font-weight: bold
+
+  .info .sub-title
+    color: $blue
+    margin-bottom: 30px
+    margin-top: 0
+
+/* ======= Footer ======= */
+
+.footer
+  padding: 15px 0
+  background: $dark-blue
+  color: $true-white
+
+  .copyright
+    -webkit-opacity: 0.8
+    -moz-opacity: 0.8
+    opacity: 0.8
+
+/* Extra small devices (phones, less than 768px) */
+
+@media (max-width: 767px)
+
+  .header
+
+    .main-nav button
+      margin-right: 0
+
+    .main-nav .navbar-collapse
+      padding-left: 15px
+      padding-right: 15px
+
+  .home
+
+    .btns .btn
+      margin-right: 0
+      clear: both
+      display: block
+      margin-bottom: 30px
+
+    .title
+      font-size: 66px
+
+    .meta
+      margin-top: 60px
+
+    .meta li
+      float: none
+      display: block
+      margin-bottom: 5px
+
+  .contact
+
+    .author-message
+      text-align: center
+
+    .author-message .profile
+      position: static
+      margin: 0 auto
+      margin-bottom: 30px
+
+    .author-message .speech-bubble
+      margin-left: 0
+
+    .author-message .speech-bubble:after
+      display: none

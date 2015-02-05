@@ -1,75 +1,161 @@
 
-.static-page
-  .hero-box.blue.pattern
-    .container
+/ HOME
+%section#home.home.section.offset-header
+  .container.text-center
 
-      %h1 Track supplies &amp; diseases anywhere in the world.
+    %h1.title Track supplies & diseases anywhere.
+    %p.intro Introducing Reliefwatch for health organizations in the developing world.
+    .btns
+      %a.btn.btn-cta-secondary.scrollto{ href: "#features" } Learn More
+      %a.btn.btn-cta-primary.scrollto{ href: "#contact" } Schedule Demo
+    .meta
+      %a.scrollto{ href: "#features" }
+        %i.fa.fa-angle-down
 
-      %h4 Introducing Reliefwatch for health organizations in the developing world.
+  .partners
+    .container.text-center
+      %ul.list-inline
+        %li Partner A
+        %li Partner B
+        %li Partner C
 
-      .row
-        .col-md-4.col-md-offset-4
-          = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
-            Request a demo
+/ FEATURES - How it works
+%section#features.features.section
+  .container
 
-  .partner-box.hidden-sm.hidden-xs
-    .container
+    %h2.title.text-center What is Reliefwatch?
+    .video
+      %iframe{ src: "https://player.vimeo.com/video/110306532?title=0&amp;byline=0&amp;portrait=0;color=ffffff", frameborder: "0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true }
+    %p.intro.text-center
+      Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
 
-      %h4 PARTNERS &amp; SUPPORTERS
+    .row
 
-      = image_tag 'global-brigades.png', class: 'partner-logo'
-      = image_tag 'heart-to-heart.png', class: 'partner-logo'
-      = image_tag 'impact-engine.png', class: 'partner-logo'
-      = image_tag 'booth.png', class: 'partner-logo'
-      = image_tag 'twilio.png', class: 'partner-logo'
-      = image_tag 'microsoft.png', class: 'partner-logo'
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Feature
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-  .feature-box
-    .container
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Feature
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-      %h2 How Reliefwatch works
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Feature
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-      .video
-        %iframe{ src: "https://player.vimeo.com/video/110306532?title=0&amp;byline=0&amp;portrait=0;color=ffffff", frameborder: "0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true }
+/ REGIONS - Where we are
+%section#regions.regions.section
+  .container.text-center
+    %h2.title Where we work
+    %ul.feature-list.list-unstyled
 
-      .row
-        .col-md-4
-          %h3 Know, don't guess
+      %li
+        %i.fa.fa-check
+        List item
 
-          %p Reliefwatch seamlessly tracks supplies and diseases. We keep your valuable data at your fingertips.
+      %li
+        %i.fa.fa-check
+        List item
 
-        .col-md-4
-          %h3 Powerful &amp; Simple
+      %li
+        %i.fa.fa-check
+        List item
 
-          %p Your organization has many moving parts, but our platform keeps tracking &amp; analytics simple.
+      %li
+        %i.fa.fa-check
+        List item
 
-        .col-md-4
-          %h3 Zero setup costs
+      %li
+        %i.fa.fa-check
+        List item
 
-          %p Our system integrates with the devices you already use. You can be setup and ready to go in 24 hours.
+/ ABOUT - About us
+%section#about.about.section
+  .container
+    .about-inner
 
-  .partner-box.hidden-sm.hidden-xs
-    .container
+      %h2.title.text-center About us
 
-      %h4 PRESS COVERAGE
+      .info
 
-      = link_to 'http://www.theguardian.com/sustainable-business/2015/jan/07/the-cloud-based-tool-improving-healthcare-across-the-developing-world', target: '_blank' do
-        = image_tag 'the-guardian.png', class: 'partner-logo'
-      = link_to 'http://www.chicagotribune.com/bluesky/originals/chi-challenge-cup-1776-1871-bsi-20141030-story.html', target: '_blank' do
-        = image_tag 'chicago-tribune.png', class: 'partner-logo'
-      = link_to 'http://www.builtinchicago.org/blog/bootstrapped-startup-reliefwatch-v-ebola', target: '_blank' do
-        = image_tag 'built-in-chicago.jpg', class: 'partner-logo'
-      = link_to 'http://www.chicagobusiness.com/article/20141023/BLOGS11/141029878/a-smart-idea-for-dumb-phones-in-ebola-fight', target: '_blank' do
-        = image_tag 'crains.png', class: 'partner-logo'
-      = link_to 'http://vimeo.com/108060777', target: '_blank' do
-        = image_tag 'technori.png', class: 'partner-logo', style: 'padding-top: 0'
+        %p
+          Our mission...
 
-  .call-to-action-box.blue
-    .container
+        %p
+          Our company rocks...
 
-      %h2 Move beyond paper forms and spreadsheets
+        .cta-container
+          .speech-bubble
+            %p.intro
+              You should joing our team...
 
-      .row
-        .col-md-4.col-md-offset-4
-          = link_to contact_path, class: 'btn btn-lg btn-primary btn-block' do
-            Request a demo today
+          .btn-container.text-center
+            JOB LINK
+
+/ PRESS - In the news
+%section#press.press.section
+  .container
+
+    %h2.title.text-center In the news
+
+    .row
+
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Story
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Story
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      .item.col-md-4.col-sm-6.col-xs-12
+        .icon-holder
+          %i.fa.fa-heart
+        .content
+          %h3.sub-title Story
+          %p
+            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+/ CONTACT
+%section#contact.contact.section
+  .container
+    .contact-inner
+
+      %h2.title.text-center Contact
+
+      %p.intro.text-center
+        I hope you find this Bootstrap template useful. Free to get in touch if you have any questions or suggestions.
+
+      .author-message
+        .profile
+          =image_tag 'shital.png'
+        .speech-bubble
+
+          %h3.sub-title Subtitle
+
+          %p
+            Paragraph of stuff
+
+          .source
+            .name John Doe
+            .title Job Title

@@ -1,40 +1,31 @@
 
-= nav_bar inverse: true do
+%header#header.header
+  .container
 
-  = link_to root_url do
-    = image_tag 'Reliefwatch-logo-white.png', alt: 'Reliefwatch', class: 'logo'
+    .logo.pull-left
+      %a.scrollto{ href: "#home" }
+        = image_tag 'Reliefwatch-logo-trans.png', alt: 'Reliefwatch'
 
-  %span.hidden-sm.hidden-md.hidden-lg
-    = menu_group :pull => :right do
+    %nav#main-nav.main-nav.navbar-right{ role: "navigation" }
 
-      = drop_down "Menu" do
-        = menu_item features_path do
-          Learn more
-        = menu_item mission_path do
-          Our mission
-        = menu_item contact_path do
-          Contact us
+      .navbar-header
+        %button.navbar-toggle{ type: "button", 'data-toggle' => "collapse", 'data-target' => "#navbar-collapse" }
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
 
-        / .sign-in
-        /   Sign in
-
-        / = menu_item 'http://www.projectsam.net' do
-        /   Global Brigades
-        / = menu_item 'http://projectsam-staging.herokuapp.com' do
-        /   Heart to Heart
-
-  %span.hidden-xs
-    = menu_group :pull => :right do
-
-      = menu_item features_path do
-        Learn more
-      = menu_item mission_path do
-        Our mission
-      = menu_item contact_path do
-        Contact us
-
-      / = drop_down "Sign in" do
-      /   = menu_item 'http://www.projectsam.net' do
-      /     Global Brigades
-      /   = menu_item 'http://projectsam-staging.herokuapp.com' do
-      /     Heart to Heart
+      .navbar-collapse.collapse#navbar-collapse
+        %ul.nav.navbar-nav
+          %li.active.nav-item.sr-only
+            %a.scrollto{ href: "#home" } Home
+          %li.nav-item
+            %a.scrollto{ href: "#features" } How it works
+          %li.nav-item
+            %a.scrollto{ href: "#regions" } Where we work
+          %li.nav-item
+            %a.scrollto{ href: "#about" } About us
+          %li.nav-item
+            %a.scrollto{ href: "#press" } In the news
+          %li.nav-item.last
+            %a.scrollto{ href: "#contact" } Contact

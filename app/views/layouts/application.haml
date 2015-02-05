@@ -1,4 +1,7 @@
 !!! 5
+/ Theme by Xiaoying Riley: http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/
+/ Theme License: http://creativecommons.org/licenses/by/3.0/
+/ Personnel icons by Simon Child: http://thenounproject.com/Simon%20Child/
 %html
   %head
     %title Reliefwatch | Medical Inventory & Disease Tracking
@@ -10,18 +13,15 @@
     %meta{ :name => "viewport", :content => "initial-scale=1.0" }
     = csrf_meta_tags
     = render 'layouts/analytics'
-  %body
+  %body{ 'data-spy' => 'scroll' }
     .wrap
 
       = render 'layouts/navbar'
       = yield
 
     %footer.footer
-      .container
-
-        .links
-          = link_to "We're hiring", careers_path
+      .container.text-center
+        %small.copyright
+          = "&copy; ".html_safe + Date.today.year.to_s + " Reliefwatch, Inc."
           &ndash;
-          = link_to 'Contact us', contact_path
-
-        = "Copyright &copy; ".html_safe + Date.today.year.to_s + " Reliefwatch, Inc."
+          We're hiring!
