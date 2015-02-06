@@ -58,12 +58,6 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
   background: $dark-blue
   color: $white
 
-.text-highlight
-  color: $blue
-
-.offset-header
-  padding-top: 90px
-
 /* ======= Header ======= */
 
 .header
@@ -79,6 +73,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
   &.navbar-fixed-top
     background: $true-white
+    border-bottom: 1px solid $true-white
     z-index: 9999
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4)
@@ -146,22 +141,22 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Home ======= */
 
 .home
-  background: url("bg-woman.png")
+  background: url("bg-woman.png") center center
   background-size: cover
   color: $true-white
   padding-top: 150px
 
   .title
-    font-size: 98px
-    color: $dark-blue
-    margin-top: 0
+    font-size: 80px
+    color: $true-white
+    max-width: 800px
+    margin: 0 auto
 
   .intro
-    padding: 40px 0 30px 0
-    font-size: 32px
-    max-width: 680px
+    padding: 40px 0
+    font-size: 30px
+    max-width: 700px
     margin: 0 auto
-    margin-bottom: 30px
 
   .btns .btn
     margin-right: 15px
@@ -169,8 +164,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     padding: 8px 30px
 
   .meta
-    margin-top: 50px
-    margin-bottom: 30px
+    margin: 50px 0 30px 0
 
     a
       color: $blue
@@ -189,8 +183,13 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
 /* ======= Features & Press ======= */
 
+.features
+  padding: 60px 0 40px 0
+
+.press
+  padding: 40px 0
+
 .features, .press
-  padding: 80px 0
   background: $white
 
   .title
@@ -227,7 +226,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Regions ======= */
 
 .regions
-  padding: 80px 0
+  padding: 60px 0 40px 0
   background: $light-aqua
   color: $true-white
 
@@ -253,7 +252,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= About ======= */
 
 .about
-  padding: 80px 0 40px 0
+  padding: 40px 0
   background: $white
 
   .title
@@ -335,7 +334,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Contact ======= */
 
 .contact
-  padding: 80px 0
+  padding: 60px 0 40px 0
   background: $light-aqua
   color: $true-white
 
@@ -403,17 +402,6 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         a
           color: $true-white
 
-        &:after
-          position: absolute
-          left: -10px
-          top: 60px
-          content: ""
-          display: inline-block
-          width: 0
-          height: 0
-          border-top: 10px solid transparent
-          border-bottom: 10px solid transparent
-          border-right: 10px solid $light-blue
 
       .source
         margin-top: 30px
@@ -423,6 +411,18 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
         .name
           font-weight: bold
+
+      &:after
+        position: absolute
+        left: -10px
+        top: 60px
+        content: ""
+        display: inline-block
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-right: 10px solid $light-blue
 
   .info .sub-title
     color: $blue
@@ -446,45 +446,40 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 @media (max-width: 767px)
 
   .header
+    background-color: $true-white
 
     .main-nav button
       margin-right: 0
 
-    .main-nav .navbar-collapse
-      padding-left: 15px
-      padding-right: 15px
-
   .home
+    padding-top: 120px
 
     .btns .btn
       margin-right: 0
       clear: both
       display: block
-      margin-bottom: 30px
+      margin-bottom: 15px
 
     .title
-      font-size: 66px
+      font-size: 40px
+
+    .intro
+      font-size: 20px
 
     .meta
-      margin-top: 60px
-
-    .meta li
-      float: none
-      display: block
-      margin-bottom: 5px
+      margin-top: 30px
 
   .contact
 
     .author-message
       text-align: center
 
-    .author-message .profile
-      position: static
-      margin: 0 auto
-      margin-bottom: 30px
+      .profile
+        position: static
+        margin: 20px auto
 
-    .author-message .speech-bubble
-      margin-left: 0
+      .speech-bubble
+        margin-left: 0
 
-    .author-message .speech-bubble:after
-      display: none
+        &:after
+          display: none
