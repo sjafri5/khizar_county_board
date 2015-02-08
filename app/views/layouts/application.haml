@@ -11,6 +11,10 @@
     = favicon_link_tag "favicon.ico"
     %meta{ :content => "Reliefwatch is a cloud service for health clinics in the developing world to track medical supplies and disease cases using basic mobile phones.", :name => "description" }
     %meta{ :name => "viewport", :content => "initial-scale=1.0" }
+    %meta{ :property => "og:title", :content => "Reliefwatch | Medical Inventory & Disease Tracking" }
+    %meta{ :property => "og:description", :content => "Reliefwatch is a cloud service for health clinics in the developing world to track medical supplies and disease cases using basic mobile phones." }
+    %meta{ :property => "og:image", :content => image_url('reliefwatch-og.png') }
+    %meta{ :property => "og:url", :content => "http://www.reliefwatch.com" }
     = csrf_meta_tags
     = render 'layouts/analytics'
   %body{ 'data-spy' => 'scroll' }
