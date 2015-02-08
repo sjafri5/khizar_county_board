@@ -11,16 +11,17 @@ body
 h1, h2, h3, h4, h5, h6
   font-family: $header-font
   font-weight: $bold
-  color: $light-aqua
+  color: $blue
 
 a
-  color: $light-aqua
+  color: $aqua
   -webkit-transition: color 0.4s
   -moz-transition: color 0.4s
   -ms-transition: color 0.4s
   -o-transition: color 0.4s
 
 a:hover
+  color: $dark-aqua
   text-decoration: underline
 
 .btn, a.btn
@@ -41,35 +42,35 @@ a:hover
 a.btn-cta-primary, .btn-cta-primary
   background: $orange
   border: none
-  color: $white
+  color: $true-white
   text-transform: uppercase
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover
   background: $dark-orange
-  color: $white
+  color: $true-white
 
 a.btn-cta-secondary, .btn-cta-secondary
   background: $blue
   border: none
-  color: $white
+  color: $true-white
   text-transform: uppercase
 
 a.btn-cta-secondary:hover, .btn-cta-secondary:hover
   background: $dark-blue
-  color: $white
+  color: $true-white
 
 /* ======= Header ======= */
 
 .header
-  padding: 10px 0
-  background: none
   position: fixed
   width: 100%
-
-  -webkit-transition: background-color 0.4s
-  -moz-transition: background-color 0.4s
-  -o-transition: background-color 0.4s
-  transition: background-color 0.4s
+  padding: 10px 0
+  background: none
+  border-bottom: 1px solid transparent
+  -webkit-transition: all 0.4s
+  -moz-transition: all 0.4s
+  -o-transition: all 0.4s
+  transition: all 0.4s
 
   &.navbar-fixed-top
     background: $true-white
@@ -141,6 +142,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Home ======= */
 
 .home
+  background-color: $light-aqua
   background: url("bg-woman.png") center center
   background-size: cover
   color: $true-white
@@ -174,12 +176,19 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         color: $dark-blue
 
   .partners
-    background: $blue
-    padding: 10px 0
-    margin: 0 auto
+    background: $true-white
 
-    li
-      margin-top: 15px
+    h4
+      float: left
+      width: 130px
+      padding-top: 18px
+      color: $med-gray
+      text-transform: uppercase
+
+    img
+      width: 100px
+      margin: 20px
+      padding-top: 5px
 
 /* ======= Features & Press ======= */
 
@@ -189,11 +198,13 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 .press
   padding: 40px 0
 
+  .title, .sub-title, .fa
+    color: $aqua !important
+
 .features, .press
   background: $white
 
   .title
-    color: $blue
     margin-top: 0
     margin-bottom: 60px
 
@@ -215,39 +226,40 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         font-size: 24px
         color: $blue
 
+      img
+        width: 30px
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        -ms-border-radius: 4px
+        -o-border-radius: 4px
+        border-radius: 4px
+
     .content
       padding-left: 60px
 
       .sub-title
         margin-top: 0
-        color: $blue
         font-size: 18px
 
 /* ======= Regions ======= */
 
 .regions
-  padding: 60px 0 40px 0
+  padding: 60px 0
   background: $light-aqua
-  color: $true-white
+  background: url("bg-worker.png") center center
+  background-size: cover
 
   .title
-    color: $blue
-    margin-top: 0
+    color: $true-white
+
+  .sub-title
+    color: $true-white
+    font-weight: $normal
+    margin-top: 60px
     margin-bottom: 30px
 
-  a
-    color: $blue
-
-    &:hover
-      color: $dark-blue
-
-  .feature-list li
-    margin-bottom: 10px
-    color: $blue
-
-  .feature-list li .fa
-    margin-right: 5px
-    color: $true-white
+  p
+    color: $white
 
 /* ======= About ======= */
 
@@ -255,15 +267,10 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
   padding: 40px 0
   background: $white
 
-  .title
-    margin-top: 0
-    margin-bottom: 60px
-    color: $blue
-
   .about-inner
     max-width: 800px
     background: $true-white
-    padding: 30px
+    padding: 20px 40px 35px 40px
     -webkit-border-radius: 4px
     -moz-border-radius: 4px
     -ms-border-radius: 4px
@@ -275,16 +282,15 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     margin: 0 auto
 
     .title
-      margin: 20px 0 40px 0
+      margin: 40px 0
 
   .info
-    max-width: 760px
     margin: 0 auto
 
   .cta-container
     max-width: 540px
     margin: 0 auto
-    margin-top: 60px
+    margin-top: 40px
     -webkit-border-radius: 4px
     -moz-border-radius: 4px
     -ms-border-radius: 4px
@@ -297,7 +303,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     .speech-bubble
       background: $light-blue
       color: $blue
-      padding: 30px
+      padding: 20px 30px
       margin-bottom: 30px
       position: relative
       -webkit-border-radius: 4px
@@ -322,6 +328,9 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         border-right: 10px solid transparent
         border-top: 10px solid $light-blue
 
+      .title
+        margin: 15px 0 20px 0
+
     .icon-holder
       margin-bottom: 15px
 
@@ -334,21 +343,17 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Contact ======= */
 
 .contact
-  padding: 60px 0 40px 0
+  padding: 60px 0 30px 0
   background: $light-aqua
   color: $true-white
 
-  .contact-inner
-    max-width: 760px
-    margin: 0 auto
-
   .title
-    color: $blue
+    color: $true-white
     margin-top: 0
     margin-bottom: 30px
 
   .intro
-    margin-bottom: 60px
+    margin-bottom: 20px
 
   a
     color: $blue
@@ -356,19 +361,22 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     &:hover
       color: $dark-blue
 
-  .author-message
+  .contact-form
+    margin-bottom: 30px
+
+  .message
     position: relative
-    margin-bottom: 60px
+    margin-top: 26px
 
     .profile
       position: absolute
-      left: 30px
-      top: 15px
-      width: 100px
-      height: 100px
+      left: 0
+      top: -2px
+      width: 80px
+      height: 80px
 
       img
-        width: 100px
+        width: 80px
         -webkit-border-radius: 50%
         -moz-border-radius: 50%
         -ms-border-radius: 50%
@@ -379,10 +387,10 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         background-clip: padding-box
 
     .speech-bubble
-      margin-left: 155px
+      margin-left: 100px
       background: $light-blue
       color: $blue
-      padding: 30px
+      padding: 25px
       -webkit-border-radius: 4px
       -moz-border-radius: 4px
       -ms-border-radius: 4px
@@ -393,18 +401,8 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
       background-clip: padding-box
       position: relative
 
-      .sub-title
-        color: $blue
-        font-size: 16px
-        margin-top: 0
-        margin-bottom: 30px
-
-        a
-          color: $true-white
-
-
       .source
-        margin-top: 30px
+        margin-top: 20px
 
         a
           color: $blue
@@ -412,10 +410,13 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
         .name
           font-weight: bold
 
+        .job-title
+          font-size: 0.9em
+
       &:after
         position: absolute
         left: -10px
-        top: 60px
+        top: 28px
         content: ""
         display: inline-block
         width: 0
@@ -440,6 +441,9 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     -webkit-opacity: 0.8
     -moz-opacity: 0.8
     opacity: 0.8
+
+    a
+      color: $white
 
 /* Extra small devices (phones, less than 768px) */
 
@@ -468,18 +472,3 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
     .meta
       margin-top: 30px
-
-  .contact
-
-    .author-message
-      text-align: center
-
-      .profile
-        position: static
-        margin: 20px auto
-
-      .speech-bubble
-        margin-left: 0
-
-        &:after
-          display: none

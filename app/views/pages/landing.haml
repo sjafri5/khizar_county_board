@@ -12,12 +12,17 @@
       %a.scrollto{ href: "#features" }
         %i.fa.fa-angle-down
 
-  .partners
+  .partners.hidden-xs.hidden-sm
     .container.text-center
-      %ul.list-inline
-        %li Partner A
-        %li Partner B
-        %li Partner C
+
+      %h4 Partners &amp; Supporters
+
+      = image_tag 'global-brigades.png', class: 'partner-logo'
+      = image_tag 'heart-to-heart.png', class: 'partner-logo'
+      = image_tag 'impact-engine.png', class: 'partner-logo'
+      = image_tag 'booth.png', class: 'partner-logo'
+      = image_tag 'twilio.png', class: 'partner-logo'
+      = image_tag 'microsoft.png', class: 'partner-logo'
 
 / FEATURES - How it works
 %section#features.features.section
@@ -33,7 +38,7 @@
 
       .item.col-md-4.col-sm-6.col-xs-12
         .icon-holder
-          %i.fa.fa-heart
+          %i.fa.fa-star
         .content
           %h3.sub-title Feature
           %p
@@ -41,7 +46,7 @@
 
       .item.col-md-4.col-sm-6.col-xs-12
         .icon-holder
-          %i.fa.fa-heart
+          %i.fa.fa-star
         .content
           %h3.sub-title Feature
           %p
@@ -49,7 +54,7 @@
 
       .item.col-md-4.col-sm-6.col-xs-12
         .icon-holder
-          %i.fa.fa-heart
+          %i.fa.fa-star
         .content
           %h3.sub-title Feature
           %p
@@ -59,50 +64,89 @@
 %section#regions.regions.section
   .container.text-center
     %h2.title Where we work
-    %ul.feature-list.list-unstyled
 
-      %li
-        %i.fa.fa-check
-        List item
+    .row
 
-      %li
-        %i.fa.fa-check
-        List item
+      .item.col-md-4.col-sm-6.col-xs-12
+        .content
+          %h3.sub-title
+            %span.flag-icon.flag-icon-bj
+            Benin
+          %p
+            Tracking vaccination distributions across the country.
 
-      %li
-        %i.fa.fa-check
-        List item
+      .item.col-md-4.col-sm-6.col-xs-12
+        .content
+          %h3.sub-title
+            %span.flag-icon.flag-icon-hn
+            Honduras
+          %p
+            Tracking distribution of medical supplies in remote areas.
 
-      %li
-        %i.fa.fa-check
-        List item
+      .item.col-md-4.col-sm-6.col-xs-12
+        .content
+          %h3.sub-title
+            %span.flag-icon.flag-icon-lr
+            Liberia
+          %p
+            Tracking the spread of Ebola in last mile health clinics.
 
-      %li
-        %i.fa.fa-check
-        List item
+      .item.col-md-4.col-sm-6.col-xs-12.col-md-offset-2
+        .content
+          %h3.sub-title
+            %span.flag-icon.flag-icon-ni
+            Nicaragua
+          %p
+            Tracking distribution of medical supplies in remote areas.
+
+      .item.col-md-4.col-sm-6.col-xs-12
+        .content
+          %h3.sub-title
+            %span.flag-icon.flag-icon-pa
+            Panama
+          %p
+            Tracking distribution of medical supplies in remote areas.
 
 / ABOUT - About us
 %section#about.about.section
   .container
     .about-inner
 
-      %h2.title.text-center About us
+      %h2.title.text-center
+        %i.fa.fa-flag
+        Our mission
 
       .info
 
         %p
-          Our mission...
+          Our mission is to provide those in need with quality care by empowering health organizations in the developing world.
+
+      %h2.title.text-center
+        %i.fa.fa-users
+        Our team
+
+      .info
 
         %p
-          Our company rocks...
+          Our team combines technological skill with over a decade of international development experience.
+
+        %p
+          Reliefwatch's infrastructure is built and maintained by developers experienced in the creation and deployment of enterprise-level inventory management systems.
+
+        %p
+          The leadership has built successful partnerships with international NGOs, multilateral funders, and government agencies.
 
         .cta-container
+
           .speech-bubble
-            %p.intro
-              You should joing our team...
+            %h3.title
+              We're hiring!
+
+            %p
+              Interested in joining a growing team on a social mission? We're hiring a full-stack developer.
 
           .btn-container.text-center
-            JOB LINK
+            %a.btn.btn-cta-primary{ href: '/Full-Stack-Developer.pdf', target: '_blank' } Apply Now
 
 / PRESS - In the news
 %section#press.press.section.hidden-xs.hidden-sm
@@ -112,29 +156,54 @@
 
     .row
 
-      .item.col-md-4.col-sm-6.col-xs-12
+      .item.col-md-4.col-md-offset-2
         .icon-holder
-          %i.fa.fa-heart
+          = image_tag 'the-guardian-icon.png'
         .content
-          %h3.sub-title Story
+          %h3.sub-title
+            The cloud-based tool improving healthcare across the developing world
           %p
-            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            = link_to "Read the story by The Guardian", 'http://www.theguardian.com/sustainable-business/2015/jan/07/the-cloud-based-tool-improving-healthcare-across-the-developing-world', target: '_blank'
 
-      .item.col-md-4.col-sm-6.col-xs-12
+      .item.col-md-4
         .icon-holder
-          %i.fa.fa-heart
+          = image_tag 'built-in-chicago-icon.png'
         .content
-          %h3.sub-title Story
+          %h3.sub-title
+            With Reliefwatch, a flip phone can help fight ebola
           %p
-            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            = link_to "Read the story by Built In Chicago", 'http://www.builtinchicago.org/2014/10/27/reliefwatch-flip-phone-can-help-fight-ebola', target: '_blank'
 
-      .item.col-md-4.col-sm-6.col-xs-12
+    .row
+
+      .item.col-md-4.col-md-offset-4
         .icon-holder
-          %i.fa.fa-heart
+          = image_tag 'chicago-inno-icon.jpg'
         .content
-          %h3.sub-title Story
+          %h3.sub-title
+            Chicago Startups Aim to Make the World Better at Impact Engine's Demo Day
           %p
-            Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            = link_to "Read the story by Chicago Inno", 'http://chicagoinno.streetwise.co/2015/01/22/chicago-startups-aim-to-make-impact-on-social-issues/', target: '_blank'
+
+    .row
+
+      .item.col-md-4.col-md-offset-2
+        .icon-holder
+          = image_tag 'ashoka-icon.jpg'
+        .content
+          %h3.sub-title
+            The mobile phone-powered fix for rural health care centres
+          %p
+            = link_to "Read the story by Ashoka UK", 'http://www.virgin.com/unite/entrepreneurship/the-mobile-phone-powered-fix-for-rural-health-care-centres', target: '_blank'
+
+      .item.col-md-4
+        .icon-holder
+          = image_tag 'crains-icon.jpg'
+        .content
+          %h3.sub-title
+            A smart idea for 'dumb phones' in Ebola fight
+          %p
+            = link_to "Read the story by Crain's Chicago", 'http://www.chicagobusiness.com/article/20141023/BLOGS11/141029878/a-smart-idea-for-dumb-phones-in-ebola-fight', target: '_blank'
 
 / CONTACT
 %section#contact.contact.section
@@ -144,18 +213,46 @@
       %h2.title.text-center Contact
 
       %p.intro.text-center
-        I hope you find this Bootstrap template useful. Free to get in touch if you have any questions or suggestions.
+        Fill out the form below to schedule a demo or email us: contact[at]reliefwatch[dot]com
 
-      .author-message
-        .profile
-          =image_tag 'shital.png'
-        .speech-bubble
+      .row
 
-          %h3.sub-title Subtitle
+        .col-md-4.col-md-offset-2
+          #contact-success{ style: 'display: none' }
+            %h4 Thanks for your message!
+            %h5 We look forward to speaking soon.
 
-          %p
-            Paragraph of stuff
+          #contact-form
+            #contact-failure{ style: 'display: none' }
+              %h4 Oops, something went wrong!
+              %h5 Name, email, organization, and request type are required.
 
-          .source
-            .name John Doe
-            .title Job Title
+            = form_tag send_email_path, remote: true do
+              .form-group
+                = label_tag :name, 'Your name'
+                = text_field_tag :name, nil, class: 'form-control'
+              .form-group
+                = label_tag :email, 'Email'
+                = email_field_tag :email, nil, class: 'form-control'
+              .form-group
+                = label_tag :company, 'Organization'
+                = text_field_tag :company, nil, class: 'form-control'
+              .form-group
+                = label_tag :request_type, 'Tell me more about'
+                = select :request, :type, [['Inventory management', 'inventory'], ['Disease tracking', 'disease'], ['Inventory & disease tracking', 'both']], { prompt: true }, class: 'form-control'
+              .form-group
+                = text_area_tag :message, nil, placeholder: "Optional message", class: 'form-control', rows: 2
+              = submit_tag 'Contact us', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
+
+        .col-md-4
+          .message
+            .profile
+              =image_tag 'shital.png'
+            .speech-bubble
+
+              %p
+                &ldquo;Reliefwatch is a remarkable partner. Not only have we improved our operations, but we've increased the impact in our communities.&rdquo;
+
+              .source
+                .name Shital Vora
+                .job-title Co-Founder of Global Brigades

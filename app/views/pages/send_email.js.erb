@@ -1,0 +1,11 @@
+
+<% if @failure == true %>
+
+  $('#contact-failure').slideDown();
+
+<% else %>
+
+  $('#contact-form').slideUp();
+  $('#contact-success').slideDown();
+
+<% end %>
