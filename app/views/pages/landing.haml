@@ -241,7 +241,8 @@
       %h2.title.text-center Contact
 
       %p.intro.text-center
-        Fill out the form below to schedule a demo or email us: contact[at]reliefwatch[dot]com
+        Fill out the form below to schedule a demo or email us:
+        = mail_to 'contact@reliefwatch.com', nil, encode: "javascript"
 
       .row
 
