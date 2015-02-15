@@ -7,7 +7,7 @@ gem 'rails', '4.1.0'
 gem 'pg'
 
 # SASS
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass', '3.2.13'
 
 # JS
 gem 'uglifier', '>= 1.3.0'
