@@ -59,6 +59,9 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
   background: $dark-blue
   color: $true-white
 
+textarea
+  resize: vertical
+
 /* ======= Header ======= */
 
 .header
@@ -204,7 +207,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
   .title
     margin-top: 0
-    margin-bottom: 60px
+    margin-bottom: 40px
 
   .intro
     max-width: 620px
@@ -240,6 +243,19 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
       .sub-title
         margin-top: 0
         font-size: 18px
+
+.video
+  width: 60%
+  margin: 40px auto
+  position: relative
+  padding-bottom: 33.5%
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 /* ======= Regions ======= */
 
@@ -343,7 +359,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 /* ======= Contact ======= */
 
 .contact
-  padding: 60px 0 30px 0
+  padding: 60px 0 40px 0
   background: $light-aqua
   color: $true-white
 
@@ -353,7 +369,7 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     margin-bottom: 30px
 
   .intro
-    margin-bottom: 20px
+    margin-bottom: 40px
 
   a
     color: $blue
@@ -361,17 +377,24 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
     &:hover
       color: $dark-blue
 
-  .contact-form
-    margin-bottom: 30px
+  #contact-form, .message
+    max-width: 470px
+    margin: 0 auto
+
+  #contact-form
+    margin-bottom: 70px
+
+    .btn
+      float: right
 
   .message
     position: relative
-    margin-top: 26px
+    padding: 26px 0
 
     .profile
       position: absolute
       left: 0
-      top: -2px
+      top: 23px
       width: 80px
       height: 80px
 
@@ -475,3 +498,8 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover
 
     .meta
       margin-top: 30px
+
+  .video
+
+    width: 90%
+    padding-bottom: 51%
