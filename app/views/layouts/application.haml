@@ -17,13 +17,7 @@
     = render 'layouts/analytics'
   %body{ 'data-spy' => 'scroll' }
     .wrap
-
       = render 'layouts/navbar'
       = yield
-
-    %footer.footer
-      .container.text-center
-        %small.copyright
-          = "&copy; ".html_safe + Date.today.year.to_s + " Reliefwatch, Inc."
-          &ndash;
-          %a.scrollto{ href: "#about" } We're hiring!
+      = render 'layouts/footer'
+      = render 'layouts/modal'
