@@ -63,7 +63,7 @@ textarea
   resize: vertical
 
 .modal-dialog
-  margin: 100px auto
+  margin: 100px auto 30px auto
   width: 800px
   max-width: 90%
 
@@ -307,7 +307,7 @@ textarea
   .about-inner
     max-width: 800px
     background: $true-white
-    padding: 20px 40px 35px 40px
+    padding: 20px 40px
     -webkit-border-radius: 4px
     -moz-border-radius: 4px
     -ms-border-radius: 4px
@@ -351,11 +351,12 @@ textarea
       -moz-background-clip: padding
       -webkit-background-clip: padding-box
       background-clip: padding-box
+      text-align: center
 
       &:after
         position: absolute
         left: 50%
-        bottom: -10px
+        top: -10px
         margin-left: -10px
         content: ""
         display: inline-block
@@ -363,10 +364,11 @@ textarea
         height: 0
         border-left: 10px solid transparent
         border-right: 10px solid transparent
-        border-top: 10px solid $light-blue
+        border-bottom: 10px solid $light-blue
 
       .title
-        margin: 15px 0 20px 0
+        line-height: 1.5em
+        margin: 0 0 10px 0
 
     .icon-holder
       margin-bottom: 15px

@@ -165,14 +165,10 @@
         .cta-container
 
           .speech-bubble
-            %h3.title
-              We're hiring!
-
-            %p
-              Interested in joining a growing team on a social mission? We're hiring a full-stack developer.
-
-          .btn-container.text-center
-            %a.btn.btn-cta-primary{ href: '/Full-Stack-Developer.pdf', target: '_blank' } Apply Now
+            %h4.title
+              Interested in joining a team on a social mission?
+            Say hello:
+            = mail_to 'contact@reliefwatch.com', nil, encode: "javascript"
 
 / PRESS - In the news
 %section#press.press.section.hidden-xs.hidden-sm
@@ -247,7 +243,7 @@
         .col-md-4.col-md-offset-2
           #contact-success{ style: 'display: none' }
             %h4 Thanks for your message!
-            %h5 We look forward to speaking soon.
+            %h5 We look forward to scheduling a time to speak.
 
           #contact-form
             #contact-failure{ style: 'display: none' }
@@ -269,7 +265,7 @@
                 = select :request, :type, [['Inventory management', 'inventory'], ['Disease tracking', 'disease'], ['Inventory & disease tracking', 'both']], { prompt: true }, class: 'form-control'
               .form-group
                 = text_area_tag :message, nil, placeholder: "Optional message", class: 'form-control', rows: 2
-              = submit_tag 'Contact us', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
+              = submit_tag 'Schedule Demo', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
 
         .col-md-4
           .message
