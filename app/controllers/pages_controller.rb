@@ -10,7 +10,7 @@ class PagesController < ApplicationController
            params[:company].present? &&
            params[:request][:type].present?
 
-          PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:request][:type], params[:message]).deliver
+          PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:request][:type], params[:message]).deliver_now
         else
           @failure = true
         end
