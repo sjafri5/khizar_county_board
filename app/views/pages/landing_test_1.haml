@@ -1,0 +1,257 @@
+
+/ HOME
+%section#home.home.section
+  .container.text-center
+
+    %h1.title Track supplies & diseases anywhere.
+    %p.intro Inventory management created for health organizations in the developing world.
+    .btns
+      %a.btn.btn-cta-secondary.scrollto{ href: "#features" } Learn More
+      %a.btn.btn-cta-primary.scrollto{ href: "#contact" } Schedule Demo
+    .meta
+      %a.scrollto{ href: "#features" }
+        %i.fa.fa-angle-down
+
+  .partners.hidden-xs.hidden-sm
+    .container.text-center
+
+      %h4 Partners &amp; Supporters
+
+      = image_tag 'global-brigades.png', class: 'partner-logo', width: '100px', height: '50px'
+      = image_tag 'heart-to-heart.png', class: 'partner-logo', width: '100px', height: '29px'
+      = image_tag 'impact-engine.png', class: 'partner-logo', width: '100px', height: '18px'
+      = image_tag 'booth.png', class: 'partner-logo', width: '100px', height: '34px'
+      = image_tag 'twilio.png', class: 'partner-logo', width: '100px', height: '38px'
+      = image_tag 'microsoft.png', class: 'partner-logo', width: '100px', height: '29px'
+
+/ FEATURES - How it works
+%section#features.features.section
+  .container
+
+    %h2.title.text-center What is ReliefWatch?
+    .video
+      %iframe{ src: "http://player.vimeo.com/video/119784254?color=ffffff&title=0&byline=0&portrait=0", frameborder: "0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true }
+
+    %p.intro.text-center
+      Developing countries lack the infrastructure to effectively manage supply chains. As a result, expired medications and stockouts are common with current solutions.
+    %p.intro.text-center
+      ReliefWatch uses a cloud-based system to track your data in real-time, analyzed and available anywhere in the world. Best of all, our service relies on the basic mobile phones your clinic workers already have.
+
+    .row
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-puzzle-piece
+        .content
+          %h3.sub-title The Simplest Solution
+          %p
+            No training required for clinic workers. If you can answer a phone, you can use our system.
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-bolt
+        .content
+          %h3.sub-title Lightning-Fast Setup
+          %p
+            ReliefWatch requires no new downloads, hardware, or installations. We use the phones you already have.
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-cloud
+        .content
+          %h3.sub-title Fully Cloud-Based
+          %p
+            All data is stored in our cloud system, available anywhere in real-time. Data is sent to our system via basic voice calls.
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-bar-chart-o
+        .content
+          %h3.sub-title Built-in Analytics
+          %p
+            ReliefWatch aggregates data across clinics and regions to provide key metrics to all stakeholders.
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-globe
+        .content
+          %h3.sub-title Works Anywhere
+          %p
+            Our system can be configured in over 190 countries and has multilingual support.
+
+      .item.col-md-4.col-sm-12
+        .icon-holder
+          %i.fa.fa-smile-o
+        .content
+          %h3.sub-title Best-in-Class Support
+          %p
+            Your problems are our problems. Get support fast. Don't see something you need? Just ask.
+
+/ REGIONS - Where we are
+%section#regions.regions.section
+  .container.text-center
+    %h2.title Designed for the developing world
+
+    .row
+
+      .item.col-sm-4
+        .content
+          = image_tag 'americas.png'
+          %h3.sub-title Central & South America
+
+      .item.col-sm-4
+        .content
+          = image_tag 'africa.png'
+          %h3.sub-title Africa
+
+      .item.col-sm-4
+        .content
+          = image_tag 'east_asia.png'
+          %h3.sub-title Southeast Asia
+
+/ ABOUT - About us
+%section#about.about.section
+  .container
+    .about-inner
+
+      %h2.title.text-center
+        %i.fa.fa-flag
+        Our mission
+
+      .info
+
+        %p
+          We create technology to improve access to medical supplies and health data for organizations working in developing countries.
+
+      %h2.title.text-center
+        %i.fa.fa-users
+        Our team
+
+      .info
+
+        %p
+          ReliefWatch joins technological skill with over a decade of international development experience. Our founders include Daniel Yu (CEO), David Jaress (CTO), and Stelios Constantinides (CPO).
+
+        %p
+          ReliefWatch's system is built by our in-house developers, well-versed in the creation and deployment of enterprise-level inventory systems. Our leadership has formed numerous partnerships with international health NGOs, multilateral funders, and government agencies.
+
+        .cta-container
+
+          .speech-bubble
+            %h4.sub-title
+              Interested in joining a team on a social mission?
+            Say hello:
+            = mail_to 'contact@reliefwatch.com', nil, encode: "javascript"
+
+/ PRESS - In the news
+%section#press.press.section.hidden-xs.hidden-sm
+  .container
+
+    %h2.title.text-center In the news
+
+    .row
+      .item.col-md-4.col-md-offset-2
+        .icon-holder
+          = image_tag 'forbes-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            Cloud Startup Keeps Critical Medical Supplies In Stock At Clinics In Developing Countries
+          %p
+            = link_to "Read the story by Forbes", 'http://www.forbes.com/sites/capitalonespark/2015/04/01/cloud-startup-keeps-critical-medical-supplies-in-stock-at-clinics-in-developing-countries/', target: '_blank'
+      .item.col-md-4
+        .icon-holder
+          = image_tag 'chicago-inno-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            Chicago Startups Aim to Make the World Better at Impact Engine's Demo Day
+          %p
+            = link_to "Read the story by Chicago Inno", 'http://chicagoinno.streetwise.co/2015/01/22/chicago-startups-aim-to-make-impact-on-social-issues/', target: '_blank'
+
+    .row
+      .item.col-md-4.col-md-offset-2
+        .icon-holder
+          = image_tag 'the-guardian-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            The cloud-based tool improving healthcare across the developing world
+          %p
+            = link_to "Read the story by The Guardian", 'http://www.theguardian.com/sustainable-business/2015/jan/07/the-cloud-based-tool-improving-healthcare-across-the-developing-world', target: '_blank'
+      .item.col-md-4
+        .icon-holder
+          = image_tag 'ashoka-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            The mobile phone-powered fix for rural health care centres
+          %p
+            = link_to "Read the story by Ashoka UK", 'http://www.virgin.com/unite/entrepreneurship/the-mobile-phone-powered-fix-for-rural-health-care-centres', target: '_blank'
+
+    .row
+      .item.col-md-4.col-md-offset-2
+        .icon-holder
+          = image_tag 'built-in-chicago-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            With ReliefWatch, a flip phone can help fight ebola
+          %p
+            = link_to "Read the story by Built In Chicago", 'http://www.builtinchicago.org/2014/10/27/reliefwatch-flip-phone-can-help-fight-ebola', target: '_blank'
+      .item.col-md-4
+        .icon-holder
+          = image_tag 'crains-icon.png', width: '30px', height: '30px'
+        .content
+          %h3.sub-title
+            A smart idea for 'dumb phones' in Ebola fight
+          %p
+            = link_to "Read the story by Crain's Chicago", 'http://www.chicagobusiness.com/article/20141023/BLOGS11/141029878/a-smart-idea-for-dumb-phones-in-ebola-fight', target: '_blank'
+
+/ CONTACT
+%section#contact.contact.section
+  .container
+    .contact-inner
+
+      %h2.title.text-center Contact
+
+      %p.intro.text-center
+        Fill out the form below to schedule a demo or email us:
+        = mail_to 'contact@reliefwatch.com', nil, encode: "javascript"
+
+      .row
+
+        .col-md-4.col-md-offset-2
+          #contact-success{ style: 'display: none' }
+            %h4 Thanks for your message!
+            %h5 We look forward to scheduling a time to speak.
+
+          #contact-form
+            #contact-failure{ style: 'display: none' }
+              %h4 Oops, something went wrong!
+              %h5 Name, email, organization, and request type are required.
+
+            = form_tag send_email_path, remote: true do
+              .form-group
+                = label_tag :name, 'Your name'
+                = text_field_tag :name, nil, class: 'form-control'
+              .form-group
+                = label_tag :email, 'Email'
+                = email_field_tag :email, nil, class: 'form-control'
+              .form-group
+                = label_tag :company, 'Organization'
+                = text_field_tag :company, nil, class: 'form-control'
+              .form-group
+                = label_tag :request_type, 'Tell me more about'
+                = select :request, :type, [['Inventory management', 'inventory'], ['Disease tracking', 'disease'], ['Inventory & disease tracking', 'both']], { prompt: true }, class: 'form-control'
+              .form-group
+                = text_area_tag :message, nil, placeholder: "Optional message", class: 'form-control', rows: 2
+              = submit_tag 'Schedule Demo', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
+
+        .col-md-4
+          .message
+            .profile
+              = image_tag 'shital.png', width: '80px', height: '80px'
+            .speech-bubble
+
+              %p
+                &ldquo;ReliefWatch is a remarkable partner. Not only have we improved our operations, but we've increased the impact in our communities.&rdquo;
+
+              .source
+                .name Shital Vora
+                .job-title Co-Founder of Global Brigades
