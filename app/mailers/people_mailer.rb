@@ -8,6 +8,6 @@ class PeopleMailer < ActionMailer::Base
     @request = request
     @message = message
 
-    mail(to: "josh@reliefwatch.com, kathleen@reliefwatch.com", subject: "Contact Form Inquiry")
+    mail(to: "josh@reliefwatch.com", subject: "Contact Form Inquiry")
   end
 end
