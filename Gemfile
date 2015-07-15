@@ -7,18 +7,20 @@ gem 'rails', '4.2.0'
 gem 'pg'
 
 # SASS
-gem 'sass', '3.2.13'
+gem 'sass-rails', '~> 5.0'
 
 # JS
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'therubyracer'
+gem 'therubyracer', platforms: :ruby
 
 # Hide mailtos using JS
 gem 'actionview-encoded_mail_to'
 
 # Bootstrap
+gem "less-rails"
 gem "twitter-bootstrap-rails"
+gem "font-awesome-sass"
 
 # JQuery
 gem 'jquery-rails', '3.1.0'
