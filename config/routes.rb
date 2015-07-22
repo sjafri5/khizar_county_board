@@ -9,7 +9,4 @@ Rails.application.routes.draw do
   get '/mission', to: redirect('/')
   get '/contact', to: redirect('/')
   get '/careers', to: redirect('/')
-  get '/business-development-job-description', to: redirect('/')
-  get '/Full-Stack-Developer', to: redirect('/')
-
 end
