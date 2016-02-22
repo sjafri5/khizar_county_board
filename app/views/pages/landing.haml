@@ -15,9 +15,9 @@
 
 / FEATURES - How it works
 %section#features.features.section
-  .container
-
+  .container.text-center
     %h2.title.text-center Who am I?
+    = image_tag 'khizar.jpg', width: '450', height: '300'
 
     %p.intro.text-center
       Hi I’m Khizar and I’m your candidate for DuPage County board. I’ve been part of the DuPage community for nearly 30 years, growing up in Wheaton where I attended public school and graduated from Wheaton North High School. 
@@ -77,11 +77,9 @@
 / REGIONS - Where we are
 %section#regions.regions.section
   .container.text-center
-    %h2.title Designed for the developing world
+    %h2.title Did You Know? 
 
     .row
-
-      Preserving the GOOD: 
 
       We live in a great community. The current board has worked tirelessly for us and have achieved several noteworthy goals. When elected I will work to preserve these good 
 
@@ -167,66 +165,6 @@
             %a{href: '/account-manager-nairobi.pdf', target: '_blank'} East Africa Account Executive - Nairobi
             %br/
 
-/ PRESS - In the news
-%section#press.press.section.hidden-xs.hidden-sm
-  .container
-
-    %h2.title.text-center In the news
-
-    .row
-      .item.col-md-4.col-md-offset-2
-        .icon-holder
-          = image_tag 'forbes-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            Cloud Startup Keeps Critical Medical Supplies In Stock At Clinics In Developing Countries
-          %p
-            = link_to "Read the story by Forbes", 'http://www.forbes.com/sites/capitalonespark/2015/04/01/cloud-startup-keeps-critical-medical-supplies-in-stock-at-clinics-in-developing-countries/', target: '_blank'
-      .item.col-md-4
-        .icon-holder
-          = image_tag 'chicago-inno-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            Chicago Startups Aim to Make the World Better at Impact Engine's Demo Day
-          %p
-            = link_to "Read the story by Chicago Inno", 'http://chicagoinno.streetwise.co/2015/01/22/chicago-startups-aim-to-make-impact-on-social-issues/', target: '_blank'
-
-    .row
-      .item.col-md-4.col-md-offset-2
-        .icon-holder
-          = image_tag 'cambridge-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            Reliefwatch wins Prince of Wales Young Entrepreneur Award
-          %p
-            = link_to "Read the story by The Cambridge Institute", 'http://www.cisl.cam.ac.uk/about/who-we-work-with/awards/unilever-sustainable-living-young-entrepreneurs-awards', target: '_blank'
-      .item.col-md-4
-        .icon-holder
-          = image_tag 'ashoka-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            The mobile phone-powered fix for rural health care centres
-          %p
-            = link_to "Read the story by Ashoka UK", 'http://www.virgin.com/unite/entrepreneurship/the-mobile-phone-powered-fix-for-rural-health-care-centres', target: '_blank'
-
-    .row
-      .item.col-md-4.col-md-offset-2
-        .icon-holder
-          = image_tag 'built-in-chicago-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            With Reliefwatch, a flip phone can help fight ebola
-          %p
-            = link_to "Read the story by Built In Chicago", 'http://www.builtinchicago.org/2014/10/27/reliefwatch-flip-phone-can-help-fight-ebola', target: '_blank'
-      .item.col-md-4
-        .icon-holder
-          = image_tag 'crains-icon.png', width: '30', height: '30'
-        .content
-          %h3.sub-title
-            A smart idea for 'dumb phones' in Ebola fight
-          %p
-            = link_to "Read the story by Crain's Chicago", 'http://www.chicagobusiness.com/article/20141023/BLOGS11/141029878/a-smart-idea-for-dumb-phones-in-ebola-fight', target: '_blank'
-
 / CONTACT
 %section#contact.contact.section
   .container
@@ -264,7 +202,6 @@
               = submit_tag 'Submit', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
 
         .col-md-4
-          .message
-            %p
+          .speech-bubble
+            %h4.sub-title
               = link_to "Donate to the campaign", 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3Q4RK5SWZZ66W', target: '_blank'
-
