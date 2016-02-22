@@ -124,47 +124,6 @@
       Open dialogue on issues that plague the county and come up with creative ways to resolve it 
 
 
-/ ABOUT - About us
-%section#about.about.section
-  .container
-    .about-inner
-
-      %h2.title.text-center
-        %i.fa.fa-flag
-        Our purpose
-
-      .info
-
-        %p
-          %strong Increasing access to improve quality of life.
-          Reliefwatch provides people around the world with access to medicine and care to help them live healthier and happier.
-
-      %h2.title.text-center
-        %i.fa.fa-users
-        Our team
-
-      .info
-
-        %p
-          Reliefwatch joins technological skill with over a decade of international development experience.
-
-        %p
-          Reliefwatch's system is built by our in-house developers, well-versed in the creation and deployment of enterprise-level inventory systems. Our leadership has formed numerous partnerships with international health NGOs, multilateral funders, and government agencies.
-
-        .cta-container
-
-          .speech-bubble
-            %h4.sub-title
-              We're hiring!
-            %a{href: '/backend-developer.pdf', target: '_blank'} Backend Developer - Chicago
-            %br/
-            %a{href: '/frontend-developer.pdf', target: '_blank'} Frontend Developer - Chicago
-            %br/
-            %a{href: '/bizdev-nairobi.pdf', target: '_blank'} East Africa Sales Director - Nairobi
-            %br/
-            %a{href: '/account-manager-nairobi.pdf', target: '_blank'} East Africa Account Executive - Nairobi
-            %br/
-
 / CONTACT
 %section#contact.contact.section
   .container
@@ -195,13 +154,12 @@
                 = label_tag :email, 'Email'
                 = email_field_tag :email, nil, class: 'form-control'
               .form-group
-                = label_tag :request_type, 'Tell me more about'
-                = select :request, :type, [['Inventory management', 'inventory'], ['Disease tracking', 'disease'], ['Inventory & disease tracking', 'both']], { prompt: true }, class: 'form-control'
-              .form-group
-                = text_area_tag :message, nil, placeholder: "Optional message", class: 'form-control', rows: 2
+                = text_area_tag :message, nil, placeholder: "Let me know your thoughts! (Optional)", class: 'form-control', rows: 2
               = submit_tag 'Submit', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
 
         .col-md-4
-          .speech-bubble
-            %h4.sub-title
-              = link_to "Donate to the campaign", 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3Q4RK5SWZZ66W', target: '_blank'
+          .content.text-center
+            %h3
+              %a.btn.btn-cta-secondary.white{ href: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3Q4RK5SWZZ66W" } Donate
+          %p.text-center
+            We can't win this without your help!
