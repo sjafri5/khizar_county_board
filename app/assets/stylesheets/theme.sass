@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6
 .white
   color: $white !important
 
+.black
+  color: $black !important
+
+.red
+  color: $red !important
+
 a
   color: $secondary
   -webkit-transition: color 0.4s
@@ -25,7 +31,6 @@ a
 
 a:hover
   color: $dark-secondary
-  text-decoration: underline
 
 .btn, a.btn
   -webkit-transition: background-color 0.4s
@@ -139,7 +144,7 @@ textarea
       font-weight: $bold-header
 
       a
-        color: $white
+        color: $med-light-gray
         font-size: 14px
         padding: 15px 10px
 
@@ -156,7 +161,7 @@ textarea
           background: none
 
       &.active a
-        color: $orange
+        color: $red
         background: none
 
       &.last
@@ -286,7 +291,7 @@ textarea
 .regions
   padding: 60px 0
   background: $light-secondary
-  background: url("bg-worker.png") center center
+  background: url("red-bg.png") center center
   background-size: cover
 
   .title
@@ -391,7 +396,7 @@ textarea
 
 .contact
   padding: 60px 0 40px 0
-  background: $light-secondary
+  background: $dark-primary
   color: $true-white
 
   .title
@@ -488,7 +493,7 @@ textarea
 
 .footer
   padding: 20px 0
-  background: $dark-primary
+  background: $med-light-gray
   color: $true-white
   font-size: 0.8em
   line-height: 2em
