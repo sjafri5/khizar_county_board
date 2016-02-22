@@ -7,10 +7,8 @@ class PagesController < ApplicationController
         if params[:name].present? &&
            params[:email].present? &&
            /.+@.+\..+/.match(params[:email]) &&
-           params[:company].present? &&
-           params[:request][:type].present?
 
-          PeopleMailer.contact_email(params[:email], params[:name], params[:company], params[:request][:type], params[:message]).deliver_now
+          PeopleMailer.contact_email(params[:email], params[:name], params[:message]).deliver_now
         else
           @failure = true
         end

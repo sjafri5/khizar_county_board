@@ -1,13 +1,11 @@
 class PeopleMailer < ActionMailer::Base
-  default from: "contact@reliefwatch.com"
+  default from: "tstartl@gmail.com"
 
-  def contact_email(email, name, company, request, message)
+  def contact_email(email, name, message)
     @email = email
     @name = name
-    @company = company
-    @request = request
     @message = message
 
-    mail(to: "josh@reliefwatch.com", subject: "Contact Form Inquiry")
+    mail(to: "tstartl@gmail.com", subject: "Contact Form Inquiry")
   end
 end
