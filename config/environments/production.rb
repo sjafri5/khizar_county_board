@@ -61,16 +61,16 @@ Rails.application.configure do
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
 
-  config.action_mailer.default_url_options = { :host => 'reliefwatch.com' }
+  config.action_mailer.default_url_options = { :host => 'gmail.com' }
 
   # Mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "mail.hover.com",
     port: 465,
-    domain: "reliefwatch.com",
-    :user_name            => 'contact@reliefwatch.com',
-    :password             => 'uchicago2014nn',
+    domain: "gmail.com",
+    :user_name            => 'tstartl@gmail.com',
+    :password             => 'sadfksaf',
     :authentication       => :login,
     :ssl                  => true,
     :tls                  => true,
