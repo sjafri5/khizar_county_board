@@ -8,35 +8,21 @@
     %p.intro Perserving the Good. Building the Better. Living in the Best.
     .btns
       %a.btn.btn-cta-secondary.scrollto{ href: "#features" } Learn More
-      %a.btn.btn-cta-primary.scrollto{ href: "#contact" } Schedule Demo
+      %a.btn.btn-cta-primary.scrollto{ href: "#contact" } Donate
     .meta
       %a.scrollto{ href: "#features" }
         %i.fa.fa-angle-down
-
-  .partners.hidden-xs.hidden-sm
-    .container.text-center
-
-      %h4 Partners &amp; Supporters
-
-      = image_tag 'global-brigades.png', class: 'partner-logo', width: '100', height: '50'
-      = image_tag 'heart-to-heart.png', class: 'partner-logo', width: '100', height: '29'
-      = image_tag 'impact-engine.png', class: 'partner-logo', width: '100', height: '18'
-      = image_tag 'booth.png', class: 'partner-logo', width: '100', height: '34'
-      = image_tag 'twilio.png', class: 'partner-logo', width: '100', height: '38'
-      = image_tag 'microsoft.png', class: 'partner-logo', width: '100', height: '29'
 
 / FEATURES - How it works
 %section#features.features.section
   .container
 
-    %h2.title.text-center What is Reliefwatch?
-    .video
-      %iframe{ src: "http://player.vimeo.com/video/119784254?color=ffffff&title=0&byline=0&portrait=0", frameborder: "0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true }
+    %h2.title.text-center Who am I?
 
     %p.intro.text-center
-      Developing countries lack the infrastructure to effectively manage supply chains. As a result, expired medications and stockouts are common with current solutions.
+      Hi I’m Khizar and I’m your candidate for DuPage County board. I’ve been part of the DuPage community for nearly 30 years, growing up in Wheaton where I attended public school and graduated from Wheaton North High School. 
     %p.intro.text-center
-      Reliefwatch uses a cloud-based system to track your data in real-time, analyzed and available anywhere in the world. Best of all, our service relies on the basic mobile phones your clinic workers already have.
+      My formative education prepared me to obtain my business degree from Benedictine University with a concentration in International Business and Economics. I’ve gone on to hold professional positions with Fortune 500 businesses such as Caterpillar, RR Donnelley, and Dabur International utilizing my strategic planning, project management and corporate finance expertise to support these firms in maximizing their return on investment. 
 
     .row
 
@@ -44,49 +30,49 @@
         .icon-holder
           %i.fa.fa-puzzle-piece
         .content
-          %h3.sub-title The Simplest Solution
+          %h3.sub-title Budget
           %p
-            No training required for clinic workers. If you can answer a phone, you can use our system.
+            Balance the budget, good. Reinvest in our community, better.
 
       .item.col-md-4.col-sm-12
         .icon-holder
           %i.fa.fa-bolt
         .content
-          %h3.sub-title Lightning-Fast Setup
+          %h3.sub-title Drug War
           %p
-            Reliefwatch requires no new downloads, hardware, or installations. We use the phones you already have.
+            Educate about drug abuse, good. Provide emergency responders with Naloxone to save lives, better.
 
       .item.col-md-4.col-sm-12
         .icon-holder
           %i.fa.fa-cloud
         .content
-          %h3.sub-title Fully Cloud-Based
+          %h3.sub-title Environment
           %p
-            All data is stored in our cloud system, available anywhere in real-time. Data is sent to our system via basic voice calls.
+            Preserve natural habitat, good. Enhance and promote environmental friendly policies, better.
 
       .item.col-md-4.col-sm-12
         .icon-holder
           %i.fa.fa-bar-chart-o
         .content
-          %h3.sub-title Built-in Analytics
+          %h3.sub-title Engagement
           %p
-            Reliefwatch aggregates data across clinics and regions to provide key metrics to all stakeholders.
+            Government website listing events and policies, good. Actively reaching out to the community to get them engaged, better!
 
       .item.col-md-4.col-sm-12
         .icon-holder
           %i.fa.fa-globe
         .content
-          %h3.sub-title Works Anywhere
+          %h3.sub-title Tax Rates
           %p
-            Our system can be configured in over 190 countries and has multilingual support.
+            Maintaining tax rates steady throughout the county, good. Reducing tax rates by finding efficient ways to consolidate government expenditure, better!
 
       .item.col-md-4.col-sm-12
         .icon-holder
           %i.fa.fa-smile-o
         .content
-          %h3.sub-title Best-in-Class Support
+          %h3.sub-title Responsiveness
           %p
-            Your problems are our problems. Get support fast. Don't see something you need? Just ask.
+            Maintaining tax rates steady throughout the county, good. Reducing tax rates by finding efficient ways to consolidate government expenditure, better!
 
 / REGIONS - Where we are
 %section#regions.regions.section
@@ -219,15 +205,14 @@
       %h2.title.text-center Contact
 
       %p.intro.text-center
-        Fill out the form below to schedule a demo or email us:
-        = mail_to 'contact@reliefwatch.com', nil, encode: "javascript"
+        Fill out the form below to stay in touch:
 
       .row
 
         .col-md-4.col-md-offset-2
           #contact-success{ style: 'display: none' }
-            %h4 Thanks for your message!
-            %h5 We look forward to scheduling a time to speak.
+            %h4 Thanks for your message.
+            %h5 Remember to vote!
 
           #contact-form
             #contact-failure{ style: 'display: none' }
@@ -242,24 +227,14 @@
                 = label_tag :email, 'Email'
                 = email_field_tag :email, nil, class: 'form-control'
               .form-group
-                = label_tag :company, 'Organization'
-                = text_field_tag :company, nil, class: 'form-control'
-              .form-group
                 = label_tag :request_type, 'Tell me more about'
                 = select :request, :type, [['Inventory management', 'inventory'], ['Disease tracking', 'disease'], ['Inventory & disease tracking', 'both']], { prompt: true }, class: 'form-control'
               .form-group
                 = text_area_tag :message, nil, placeholder: "Optional message", class: 'form-control', rows: 2
-              = submit_tag 'Schedule Demo', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
+              = submit_tag 'Submit', data: { disable_with: "Sending..." }, class: 'btn btn-cta-primary'
 
         .col-md-4
           .message
-            .profile
-              = image_tag 'shital.png', width: '80', height: '80'
-            .speech-bubble
+            %p
+              = link_to "Donate to the campaign", 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3Q4RK5SWZZ66W', target: '_blank'
 
-              %p
-                &ldquo;Reliefwatch is a remarkable partner. Not only have we improved our operations, but we've increased the impact in our communities.&rdquo;
-
-              .source
-                .name Shital Vora
-                .job-title Co-Founder of Global Brigades
